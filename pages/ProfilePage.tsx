@@ -90,13 +90,13 @@ export const ProfilePage: React.FC = () => {
       <div className="flex flex-col items-center mb-8 animate-slide-up relative">
         <button
           onClick={() => setIsEditModalOpen(true)}
-          className="absolute right-0 top-0 p-2 bg-white rounded-full shadow-sm text-slate-500 hover:text-blue-500 transition-colors"
+          className="absolute right-0 top-0 p-2 bg-white rounded-full shadow-sm text-slate-500 hover:text-[#5a1e28] transition-colors"
         >
           <Settings size={20} />
         </button>
 
         <div className="relative group mb-4">
-          <div className="w-24 h-24 rounded-full p-1 border-2 border-dashed border-blue-400 animate-pop-in shadow-inner bg-white overflow-hidden">
+          <div className="w-24 h-24 rounded-full p-1 border-2 border-dashed border-[#5a1e28] animate-pop-in shadow-inner bg-white overflow-hidden">
             <img src={user.avatarUrl} alt={user.name} className="w-full h-full rounded-full object-cover" />
           </div>
         </div>
@@ -235,7 +235,7 @@ export const ProfilePage: React.FC = () => {
                 <label className="text-[10px] font-bold text-slate-600 uppercase mb-2.5 block px-1">Ваше имя</label>
                 <input
                   type="text"
-                  className="w-full bg-slate-100 border-2 border-transparent rounded-2xl p-4 text-sm font-semibold focus:ring-0 focus:border-blue-500 outline-none transition-all"
+                  className="w-full bg-slate-100 border-2 border-transparent rounded-2xl p-4 text-sm font-semibold focus:ring-0 focus:border-[#5a1e28] outline-none transition-all"
                   placeholder="Введите имя..."
                   value={editName}
                   onChange={e => setEditName(e.target.value)}

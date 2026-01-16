@@ -92,7 +92,7 @@ export const CartPage: React.FC = () => {
         <p className="text-center">Похоже, вы еще не выбрали ничего вкусного.</p>
         <button
           onClick={() => navigate('/')}
-          className="mt-6 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+          className="mt-6 text-[#5a1e28] font-medium hover:text-[#3a1420] transition-colors"
         >
           Перейти в меню
         </button>
@@ -134,7 +134,7 @@ export const CartPage: React.FC = () => {
                   <span className="text-sm font-medium w-4 text-center">{item.quantity}</span>
                   <button
                     onClick={() => updateQuantity(item.uniqueId, 1)}
-                    className="p-1 hover:text-blue-500 transition-transform active:scale-75"
+                    className="p-1 hover:text-[#5a1e28] transition-transform active:scale-75"
                   >
                     <Plus size={16} />
                   </button>
@@ -147,7 +147,7 @@ export const CartPage: React.FC = () => {
 
       <button
         onClick={handleAddMore}
-        className="w-full py-3 mb-8 border-2 border-dashed border-gray-200 rounded-xl text-slate-500 font-medium flex items-center justify-center gap-2 hover:border-blue-300 hover:text-blue-500 transition-all active:scale-[0.98] animate-slide-up stagger-1"
+        className="w-full py-3 mb-8 border-2 border-dashed border-gray-200 rounded-xl text-slate-500 font-medium flex items-center justify-center gap-2 hover:border-[#5a1e28] hover:text-[#5a1e28] transition-all active:scale-[0.98] animate-slide-up stagger-1"
       >
         <Plus size={18} />
         <span>Добавить ещё</span>
@@ -211,7 +211,7 @@ export const CartPage: React.FC = () => {
           {isAsap ? (
             <div className="flex flex-col items-center animate-fade-in">
               <div className="flex items-center gap-3">
-                <Clock size={28} className="text-[#d6cec3]" />
+                <Clock size={28} className="text-[#5a1e28]" />
                 <p className="text-lg font-black text-slate-900">15 - 20 минут</p>
               </div>
               <p className="text-xs text-slate-400 font-medium mt-1">Примерное время ожидания</p>
@@ -250,7 +250,7 @@ export const CartPage: React.FC = () => {
       <div className="bg-white rounded-[2rem] p-6 shadow-sm mb-6 animate-slide-up stagger-4 opacity-0 fill-mode-forwards border border-gray-100 relative group focus-within:ring-2 focus-within:ring-blue-100 transition-all duration-300">
         <div className="flex justify-between items-start mb-2">
           <div className="flex items-center gap-2">
-            <MessageSquare size={16} className="text-blue-600" />
+            <MessageSquare size={16} className="text-[#5a1e28]" />
             <span className="text-xs font-black text-slate-900 uppercase tracking-wider">Комментарий к заказу</span>
           </div>
         </div>

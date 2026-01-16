@@ -40,7 +40,7 @@ export const ConfirmScanPage: React.FC = () => {
         </div>
         <h1 className="text-2xl font-black text-slate-900 mb-2 text-center leading-tight">Бонусы начислены!</h1>
         <p className="text-slate-600 text-center font-bold text-sm mb-10 max-w-[240px]">
-          Владелец QR-кода (<span className="text-blue-600">{userId}</span>) успешно получил 12 бонусов за визит.
+          Владелец QR-кода (<span className="text-[#5a1e28]">{userId}</span>) успешно получил 12 бонусов за визит.
         </p>
 
         <button
@@ -64,14 +64,14 @@ export const ConfirmScanPage: React.FC = () => {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center px-8 pb-20">
-        <div className="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mb-8 shadow-2xl shadow-blue-200 animate-pop-in">
+        <div className="w-20 h-20 bg-[#5a1e28] rounded-3xl flex items-center justify-center mb-8 shadow-2xl shadow-[#5a1e28]/20 animate-pop-in">
           <UserCheck size={36} className="text-white" />
         </div>
 
         <div className="text-center mb-10 animate-slide-up">
           <h2 className="text-2xl font-black text-slate-900 mb-3">Начислить бонусы?</h2>
           <p className="text-slate-600 text-sm leading-relaxed font-bold">
-            Вы отсканировали код пользователя <span className="text-blue-600 font-black">{userId}</span>.
+            Вы отсканировали код пользователя <span className="text-[#5a1e28] font-black">{userId}</span>.
             Подтвердите покупку, чтобы отправить ему бонусы.
           </p>
         </div>
@@ -79,12 +79,12 @@ export const ConfirmScanPage: React.FC = () => {
         <div className="w-full bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm mb-10 animate-slide-up stagger-1">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#5a1e28]/10 text-[#5a1e28] rounded-xl flex items-center justify-center">
                 <Zap size={20} />
               </div>
               <span className="text-sm font-black text-slate-700 uppercase tracking-tight">Бонус за визит</span>
             </div>
-            <span className="text-lg font-black text-blue-600">+12 Б.</span>
+            <span className="text-lg font-black text-[#5a1e28]">+12 Б.</span>
           </div>
         </div>
 

@@ -100,7 +100,7 @@ export const AddressesPage: React.FC = () => {
               <div className="pt-4 border-t border-gray-50 space-y-3">
                 <div className="flex items-start gap-3">
                   <Phone size={16} className="text-slate-400 mt-0.5" />
-                  <a href={`tel:${loc.phone}`} className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors" onClick={e => e.stopPropagation()}>
+                  <a href={`tel:${loc.phone}`} className="text-sm font-semibold text-slate-700 hover:text-[#5a1e28] transition-colors" onClick={e => e.stopPropagation()}>
                     {loc.phone}
                   </a>
                 </div>
