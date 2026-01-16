@@ -34,7 +34,7 @@ export const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F3F4F6] flex flex-col items-center justify-center px-6 relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-[#F5F2E8] flex flex-col items-center justify-center px-6 relative overflow-hidden font-sans">
       <div className="absolute top-[-5%] right-[-10%] w-72 h-72 bg-blue-600 rounded-full blur-[100px] opacity-10"></div>
       <div className="absolute bottom-[5%] left-[-10%] w-72 h-72 bg-stone-500 rounded-full blur-[100px] opacity-10"></div>
 
@@ -42,8 +42,8 @@ export const LoginPage: React.FC = () => {
         <div className="flex flex-col items-center mb-6">
           <div className="w-48 h-48 mb-2 animate-pop-in drop-shadow-2xl">
             <img
-              src="images/logo.png"
-              alt="Logo"
+              src="https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+              alt="Brunch Coffee Logo"
               className="w-full h-full object-contain"
             />
           </div>

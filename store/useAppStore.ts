@@ -5,11 +5,11 @@ import { PRODUCTS, CATEGORIES } from '../services/mockData';
 import { api } from '../services/api';
 
 export const COFFEE_LEVELS: Achievement[] = [
-  { id: '1', name: 'Новичок', description: 'Ваше первое знакомство с H🪶STORY. Добро пожаловать в семью!', pointsRequired: 0, icon: '🐣', color: 'bg-emerald-400' },
-  { id: '2', name: 'Кофеман', description: 'Вы уже знаете разницу между латте и капучино. Так держать!', pointsRequired: 100, icon: '☕', color: 'bg-amber-400' },
-  { id: '3', name: 'Бариста-Шеф', description: 'Ваш вкус становится изысканнее. Вы настоящий эксперт!', pointsRequired: 250, icon: '🧑‍🍳', color: 'bg-orange-500' },
-  { id: '4', name: 'Магистр Эспрессо', description: 'Вы повелеваете кофейными зернами. Легендарный уровень!', pointsRequired: 500, icon: '🪄', color: 'bg-stone-600' },
-  { id: '5', name: 'Кофейный Монарх', description: 'Вы достигли вершины. Весь мир H🪶STORY у ваших ног!', pointsRequired: 1000, icon: '👑', color: 'bg-yellow-500' },
+  { id: '1', name: 'Гость Brunch', description: 'Ваше первое знакомство с Brunch Coffee. Добро пожаловать!', pointsRequired: 0, icon: '🐣', color: 'bg-emerald-400' },
+  { id: '2', name: 'Кофейный Любитель', description: 'Вы уже знаете разницу между латте и капучино. Отличное начало!', pointsRequired: 100, icon: '☕', color: 'bg-amber-400' },
+  { id: '3', name: 'Истинный Ценитель', description: 'Ваш вкус становится изысканнее. Вы настоящий знаток!', pointsRequired: 250, icon: '🧑‍🍳', color: 'bg-orange-500' },
+  { id: '4', name: 'Кофейный Эксперт', description: 'Вы разбираетесь в кофе на профессиональном уровне!', pointsRequired: 500, icon: '🪄', color: 'bg-stone-600' },
+  { id: '5', name: 'Верховный Мастер', description: 'Вы достигли вершины. Вы - легенда Brunch Coffee!', pointsRequired: 1000, icon: '👑', color: 'bg-yellow-500' },
 ];
 
 export const getLevelByPoints = (points: number) => {

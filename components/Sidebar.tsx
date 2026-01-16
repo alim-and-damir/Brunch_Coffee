@@ -25,8 +25,8 @@ export const Sidebar: React.FC = () => {
         <aside className="fixed left-0 top-0 bottom-0 w-64 bg-white border-r border-gray-200 z-50 hidden md:flex flex-col">
             <div className="h-20 flex items-center px-8 border-b border-gray-100">
                 <img
-                    src="images/logo.png"
-                    alt="Logo"
+                    src="https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+                    alt="Brunch Coffee Logo"
                     className="h-8 object-contain"
                 />
             </div>
@@ -39,7 +39,7 @@ export const Sidebar: React.FC = () => {
                         className={({ isActive }) => `
               flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group
               ${isActive
-                                ? 'bg-[#b7ad98]/10 text-[#b7ad98] font-bold'
+                                ? 'bg-[#2B211C]/10 text-[#2B211C] font-bold'
                                 : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900 font-medium'}
             `}
                     >
@@ -48,7 +48,7 @@ export const Sidebar: React.FC = () => {
                                 <item.icon
                                     size={20}
                                     strokeWidth={isActive ? 2.5 : 2}
-                                    className={isActive ? 'text-[#b7ad98]' : 'text-gray-400 group-hover:text-gray-600'}
+                                    className={isActive ? 'text-[#2B211C]' : 'text-gray-400 group-hover:text-gray-600'}
                                 />
                                 <span className="flex-1">{item.label}</span>
                                 {item.badge && (
@@ -65,7 +65,7 @@ export const Sidebar: React.FC = () => {
             <div className="p-4 border-t border-gray-100">
                 <div className="bg-gray-50 rounded-xl p-4">
                     <p className="text-xs text-center text-gray-400">
-                        &copy; 2025 History Coffee
+                        &copy; 2025 Brunch Coffee
                     </p>
                 </div>
             </div>
