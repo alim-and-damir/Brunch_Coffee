@@ -13,209 +13,634 @@ export const MOCK_USER: User = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'coffee', name: 'Кофе и напитки' },
-  // { id: 'tea', name: 'Чай и Матча' },
-  { id: 'breakfast', name: 'Завтраки' },
-  { id: 'main', name: 'Основные блюда' },
-  { id: 'dessert', name: 'Десерты' },
+  { id: 'leaf_tea', name: 'ЛИСТОВОЙ ЧАЙ' },
+  { id: 'homemade_tea', name: 'ДОМАШНИЙ ЧАЙ' },
+  { id: 'cold_coffee', name: 'КОФЕ #colddrinks' },
+  { id: 'fresh', name: 'ФРЕШИ' },
+  { id: 'milkshakes', name: 'МИЛКШЕЙКИ' },
+  { id: 'lemonades', name: 'ЛИМОНАДЫ' },
+  { id: 'smoothies', name: 'СМУЗИ' },
+  { id: 'hot_coffee', name: 'КОФЕ #hotdrinks' },
+  { id: 'dessert_drinks', name: 'ДЕСЕРТНЫЕ' },
 ];
 
 export const PRODUCTS: Product[] = [
-  // --- COFFEE & DRINKS ---
+  // --- ЛИСТОВОЙ ЧАЙ ---
   {
-    id: 20,
-    name: "Латте с соленой карамелью",
-    description: "Бежевый латте с миндальными хлопьями и завитком карамели. Идеальный баланс сладкого и соленого.",
-    price: 300,
-    categoryId: "coffee",
-    imageUrl: "https://i.postimg.cc/gnTkgZdD/image.jpg",
+    id: 1,
+    name: "Ассам",
+    description: "Классический индийский чай с насыщенным вкусом",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 'm', name: 'M (300мл)', price: 0 }, { id: 'l', name: 'L (400мл)', price: 60 }],
-      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное', price: 50 }],
-      syrups: []
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 2,
+    name: "Ера грей",
+    description: "Чай с бергамотом и цветами лаванды",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 3,
+    name: "Чабрец",
+    description: "Травяной чай с чабрецом",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 4,
+    name: "Айва персик",
+    description: "Фруктовый чай с вкусом айвы и персика",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 5,
+    name: "Вишневый пуэр",
+    description: "Пуэр с вишней",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 6,
+    name: "Жасмин",
+    description: "Зеленый чай с жасмином",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+  {
+    id: 7,
+    name: "Молочный улун",
+    description: "Улун с молочным ароматом",
+    price: 200,
+    categoryId: "leaf_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+    }
+  },
+
+  // --- ДОМАШНИЙ ЧАЙ ---
+  {
+    id: 8,
+    name: "Имбирный апельсин",
+    description: "Домашний чай с имбирем и апельсином",
+    price: 240,
+    categoryId: "homemade_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '240мл', price: 0 }, { id: 'l', name: '300мл', price: 60 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 9,
+    name: "Облепиховый",
+    description: "Домашний чай с облепихой",
+    price: 240,
+    categoryId: "homemade_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '240мл', price: 0 }, { id: 'l', name: '300мл', price: 60 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 10,
+    name: "Абло кини",
+    description: "Домашний чай с аблосом и киви",
+    price: 240,
+    categoryId: "homemade_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '240мл', price: 0 }, { id: 'l', name: '300мл', price: 60 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 11,
+    name: "Личи гранат",
+    description: "Домашний чай с личи и гранатом",
+    price: 240,
+    categoryId: "homemade_tea",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '240мл', price: 0 }, { id: 'l', name: '300мл', price: 60 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+
+  // --- КОФЕ #colddrinks ---
+  {
+    id: 12,
+    name: "Айс латте",
+    description: "Холодный латте со льдом",
+    price: 240,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 13,
+    name: "Фраппе",
+    description: "Ледяной кофейный коктейль",
+    price: 270,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 14,
+    name: "Фраппе милка",
+    description: "Фраппе с милкой",
+    price: 290,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 15,
+    name: "Кофейно-банановый смузи",
+    description: "Смузи из кофе и банана",
+    price: 290,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 16,
+    name: "Бамбл апельсин",
+    description: "Кофе с апельсином",
+    price: 260,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 17,
+    name: "Бамбл грейпфрут",
+    description: "Кофе с грейпфрутом",
+    price: 260,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
     id: 18,
-    name: "Малиновый латте",
-    description: "Нежный розовый латте с посыпкой из сублимированной малины. Ягодная нежность в каждом глотке.",
-    price: 300,
-    categoryId: "coffee",
-    imageUrl: "https://i.postimg.cc/pm3rLn10/image.jpg",
+    name: "Бамбл гранат",
+    description: "Кофе с гранатом",
+    price: 260,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 'm', name: '300мл', price: 0 }],
-      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'coconut', name: 'Кокосовое', price: 50 }],
-      syrups: []
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
     id: 19,
-    name: "Горячий шоколад",
-    description: "Чашка густого горячего шоколада с бархатистой пенкой. Согревает и поднимает настроение.",
-    price: 250,
-    categoryId: "coffee",
-    imageUrl: "https://i.postimg.cc/F1hRzvDv/image.jpg",
+    name: "Бамбл вишня",
+    description: "Кофе с вишней",
+    price: 260,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }],
-      milks: [],
-      syrups: [{ id: 'marshmallow', name: 'Маршмеллоу', price: 30 }]
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
-
-  // --- TEA & MATCHA ---
   {
-    id: 17,
-    name: "Матча латте",
-    description: "Зеленый матча латте с красивым латте-артом на пенке. Подается в широкой чашке на блюдце.",
-    price: 300,
-    categoryId: "coffee",
-    imageUrl: "https://i.postimg.cc/TpRWzmzf/image.jpg",
+    id: 20,
+    name: "Бамбл на фреше апельсин",
+    description: "Кофе на свежевыжатом апельсиновом соке",
+    price: 420,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 'm', name: '300мл', price: 0 }],
-      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'oat', name: 'Овсяное', price: 50 }],
-      syrups: []
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
-  },
-
-  // --- BREAKFAST ---
-  {
-    id: 14,
-    name: "Авокадо-тост с лососем",
-    description: "Хрустящий тост с кремом из авокадо, ломтиками лосося, яйцом пашот и микрозеленью.",
-    price: 450,
-    categoryId: "breakfast",
-    imageUrl: "https://i.postimg.cc/wttN5fYF/image.jpg",
-  },
-  {
-    id: 6,
-    name: "Круассан с овощами",
-    description: "Свежий круассан, щедро наполненный огурцом, помидором, листьями салата и нежным сыром.",
-    price: 250,
-    categoryId: "breakfast",
-    imageUrl: "https://i.postimg.cc/nsZ8B5mb/image.jpg",
-  },
-  {
-    id: 13,
-    name: "Фруктовая каша",
-    description: "Питательная овсянка с клубникой, черникой, бананом, йогуртом, орехами и ломтиками сливы.",
-    price: 250,
-    categoryId: "breakfast",
-    imageUrl: "https://i.postimg.cc/4HRpxzM4/image.jpg",
-  },
-
-  // --- MAIN DISHES ---
-  {
-    id: 3,
-    name: "Говядина с овощами",
-    description: "Сочные кусочки жареной говядины с картофелем, помидорами черри, болгарским перцем и спаржей в фирменном соусе.",
-    price: 500,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/KRRm8dPt/image.jpg",
-  },
-  {
-    id: 5,
-    name: "Креветки в карри с рисом",
-    description: "Рассыпчатый рис с ароматным соусом карри и кусочками креветок, украшенный свежей зеленью.",
-    price: 450,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/qgZdSjPd/image.jpg",
-  },
-  {
-    id: 16,
-    name: "Креветки в остром соусе",
-    description: "Тигровые креветки в пикантном оранжевом соусе с зеленым луком и лавровым листом.",
-    price: 500,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/Q9GFQjbM/image.jpg",
-  },
-  {
-    id: 7,
-    name: "Курица гриль с соусом",
-    description: "Аппетитная нарезанная курица на гриле, подается с насыщенным красным соусом и легким салатом.",
-    price: 400,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/vx4CGwJb/image.jpg",
-  },
-  {
-    id: 8,
-    name: "Салат Цезарь",
-    description: "Хрустящие листья романо с куриным филе, домашними сухариками, пармезаном и помидорами черри.",
-    price: 400,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/jDHmxXFQ/image.jpg",
-  },
-  {
-    id: 4,
-    name: "Салат с курицей",
-    description: "Легкий салат с кусочками курицы в кунжуте, свежими помидорами, зеленью, огурцом и белым сыром.",
-    price: 400,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/JycLFm8R/image.jpg",
   },
   {
     id: 21,
-    name: "Салат с киноа и курицей",
-    description: "Куриное филе в сливочном соусе с киноа, огурцом, помидором и миксом салатных листьев.",
-    price: 450,
-    categoryId: "main",
-    imageUrl: "https://i.postimg.cc/mzBbP33S/image.jpg",
+    name: "Бамбл на фреше грейпфрут",
+    description: "Кофе на свежевыжатом грейпфрутовом соке",
+    price: 420,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 22,
+    name: "Эспрессо тоник",
+    description: "Эспрессо с тоником",
+    price: 260,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 23,
+    name: "Айс матча",
+    description: "Холодная матча",
+    price: 250,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 24,
+    name: "Кола брио классик",
+    description: "Кола с классическим вкусом",
+    price: 250,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 25,
+    name: "Кола брио гранат",
+    description: "Кола с гранатом",
+    price: 250,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 26,
+    name: "Кола брио вишня",
+    description: "Кола с вишней",
+    price: 250,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 27,
+    name: "Кола брио кола",
+    description: "Кола брио кола",
+    price: 300,
+    categoryId: "cold_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
   },
 
-  // --- DESSERTS ---
+  // --- ФРЕШИ ---
   {
-    id: 2,
-    name: "Шоколадный чизкейк",
-    description: "Роскошный кусок чизкейка с карамельным слоем, нежной кремовой серединой и шоколадным верхом.",
-    price: 350,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/vgbQ8ThF/image.jpg",
-  },
-  {
-    id: 1,
-    name: "Фруктовый тарт",
-    description: "Прямоугольный тарт с заварным кремом и шапкой из свежих ягод: клубники, малины и черники.",
+    id: 28,
+    name: "Апельсиновый",
+    description: "Свежевыжатый апельсиновый сок",
     price: 300,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/KKcLKGJd/image.jpg",
+    categoryId: "fresh",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
   },
   {
-    id: 9,
-    name: "Малиновый медовик",
-    description: "Авторский слоеный торт с тонкими медовыми коржами, сливочным кремом и ярким верхом из малины.",
-    price: 350,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/c6vzgZzy/image.jpg",
+    id: 29,
+    name: "Грейпфрутовый",
+    description: "Свежевыжатый грейпфрутовый сок",
+    price: 300,
+    categoryId: "fresh",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
   },
+
+  // --- МИЛКШЕЙКИ ---
   {
-    id: 11,
-    name: "Торт с арахисовым маслом",
-    description: "Торт в глянцевой шоколадной глазури с насыщенным кремом из арахисового масла, украшен золотом.",
-    price: 350,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/JsxxYdFp/image.jpg",
-  },
-  {
-    id: 10,
-    name: "Карамельный эклер",
-    description: "Воздушный эклер, покрытый карамельной глазурью, с дроблеными орехами и декоративными хлопьями.",
+    id: 30,
+    name: "Банановый",
+    description: "Милкшейк с бананом",
     price: 250,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/SXZZRt7N/image.jpg",
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
-    id: 12,
-    name: "Лимонный пирог с меренгой",
-    description: "Маленький тарт с яркой лимонной начинкой и поджаренными пиками воздушной меренги.",
-    price: 300,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/QHrq83GR/image.jpg",
+    id: 31,
+    name: "Вишня шоколад",
+    description: "Милкшейк с вишней и шоколадом",
+    price: 250,
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
-    id: 15,
-    name: "Шоколадно-арахисовое печенье",
-    description: "Большое домашнее печенье с шоколадными чипсами, арахисовой посыпкой и шоколадной глазурью.",
+    id: 32,
+    name: "Соленый крекер",
+    description: "Милкшейк со вкусом соленого крекера",
+    price: 250,
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 33,
+    name: "Ванильный",
+    description: "Ванильный милкшейк",
+    price: 250,
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 34,
+    name: "Шоколадный",
+    description: "Шоколадный милкшейк",
+    price: 250,
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 35,
+    name: "Какао банан",
+    description: "Милкшейк с какао и бананом",
+    price: 250,
+    categoryId: "milkshakes",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+
+  // --- ЛИМОНАДЫ ---
+  {
+    id: 36,
+    name: "Мохито",
+    description: "Лимонад мохито",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 37,
+    name: "Мохито клубничный",
+    description: "Клубничный мохито",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 38,
+    name: "Киви яблоко",
+    description: "Лимонад с киви и яблоком",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 39,
+    name: "Вишня питахайя",
+    description: "Лимонад с вишней и питахайей",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 40,
+    name: "Манго личи",
+    description: "Лимонад с манго и личи",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 41,
+    name: "Грейпфрут каюбинка",
+    description: "Лимонад с грейпфрутом",
+    price: 250,
+    categoryId: "lemonades",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+
+  // --- СМУЗИ ---
+  {
+    id: 42,
+    name: "Ягодный",
+    description: "Ягодный смузи",
+    price: 280,
+    categoryId: "smoothies",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 43,
+    name: "Финиковый",
+    description: "Смузи с финиками",
+    price: 280,
+    categoryId: "smoothies",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 44,
+    name: "Вишня дайм",
+    description: "Смузи с вишней и дайм",
+    price: 280,
+    categoryId: "smoothies",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 45,
+    name: "Гранат малина",
+    description: "Смузи с гранатом и малиной",
+    price: 280,
+    categoryId: "smoothies",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+
+  // --- КОФЕ #hotdrinks ---
+  {
+    id: 46,
+    name: "Эспрессо",
+    description: "Классический эспрессо",
+    price: 180,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 47,
+    name: "Флэт",
+    description: "Флэт уайт",
     price: 200,
-    categoryId: "dessert",
-    imageUrl: "https://i.postimg.cc/hfS7ZPqP/image.jpg",
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 48,
+    name: "Флэт гранат",
+    description: "Флэт уайт с гранатом",
+    price: 240,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 49,
+    name: "Американо",
+    description: "Американо",
+    price: 180,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+  },
+  {
+    id: 50,
+    name: "Капучино",
+    description: "Классическое капучино",
+    price: 220,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      sizes: [{ id: 's', name: '220мл', price: 0 }, { id: 'l', name: '240мл', price: 20 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 51,
+    name: "Флэт уайт",
+    description: "Флэт уайт",
+    price: 220,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 52,
+    name: "Латте",
+    description: "Классический латте",
+    price: 240,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 53,
+    name: "Матча латте",
+    description: "Латте с матчей",
+    price: 240,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 54,
+    name: "Раф",
+    description: "Кофе раф",
+    price: 290,
+    categoryId: "hot_coffee",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+
+  // --- ДЕСЕРТНЫЕ ---
+  {
+    id: 55,
+    name: "Раф угрен",
+    description: "Раф с угреном",
+    price: 350,
+    categoryId: "dessert_drinks",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 56,
+    name: "Кубинский мокко",
+    description: "Кофе кубинский мокко",
+    price: 250,
+    categoryId: "dessert_drinks",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 57,
+    name: "Бельгийский какао",
+    description: "Горячий бельгийский какао",
+    price: 250,
+    categoryId: "dessert_drinks",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 58,
+    name: "Горячий шоколад",
+    description: "Классический горячий шоколад",
+    price: 250,
+    categoryId: "dessert_drinks",
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   }
 ];
