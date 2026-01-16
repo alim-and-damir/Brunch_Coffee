@@ -13,15 +13,15 @@ export const MOCK_USER: User = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'leaf_tea', name: 'ЛИСТОВОЙ ЧАЙ' },
-  { id: 'homemade_tea', name: 'ДОМАШНИЙ ЧАЙ' },
-  { id: 'cold_coffee', name: 'КОФЕ #colddrinks' },
-  { id: 'fresh', name: 'ФРЕШИ' },
-  { id: 'milkshakes', name: 'МИЛКШЕЙКИ' },
-  { id: 'lemonades', name: 'ЛИМОНАДЫ' },
-  { id: 'smoothies', name: 'СМУЗИ' },
-  { id: 'hot_coffee', name: 'КОФЕ #hotdrinks' },
-  { id: 'dessert_drinks', name: 'ДЕСЕРТНЫЕ' },
+  { id: 'hot_coffee', name: 'Кофе горячий' },
+  { id: 'cold_coffee', name: 'Кофе холодный' },
+  { id: 'dessert_drinks', name: 'Десертные напитки' },
+  { id: 'milkshakes', name: 'Милкшейки' },
+  { id: 'smoothies', name: 'Смузи' },
+  { id: 'fresh', name: 'Фреши' },
+  { id: 'lemonades', name: 'Лимонады' },
+  { id: 'leaf_tea', name: 'Листовой чай' },
+  { id: 'homemade_tea', name: 'Домашний чай' },
 ];
 
 export const PRODUCTS: Product[] = [

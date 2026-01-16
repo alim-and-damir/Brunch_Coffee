@@ -126,7 +126,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onC
             </button>
           </div>
 
-          {(product.modifiers?.milks?.length || product.modifiers?.syrups?.length) ? (
+          {(product.modifiers?.milks?.length || product.modifiers?.syrups?.length || product.modifiers?.sizes?.length) ? (
             <div className="mb-8">
               <h3 className="font-semibold text-gray-900 mb-2 text-base">Настройка</h3>
               <div className="flex gap-4 overflow-x-auto py-4 no-scrollbar -mx-6 px-6">
