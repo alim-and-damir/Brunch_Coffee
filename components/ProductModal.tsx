@@ -137,10 +137,10 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onC
                     className="flex flex-col items-center gap-2 min-w-[72px] group active:scale-95 transition-transform duration-200"
                   >
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 border-2 ${selectedMilk?.id === milk.id
-                      ? 'bg-blue-50 border-blue-500 shadow-md scale-105'
+                      ? 'bg-[#5a1e28]/10 border-[#5a1e28] shadow-md scale-105'
                       : 'bg-gray-50 border-transparent group-hover:bg-gray-100'
                       }`}>
-                      <Milk size={24} className={`transition-colors duration-300 ${selectedMilk?.id === milk.id ? 'text-blue-600' : 'text-gray-400'}`} />
+                      <Milk size={24} className={`transition-colors duration-300 ${selectedMilk?.id === milk.id ? 'text-[#5a1e28]' : 'text-gray-400'}`} />
                     </div>
                     <span className="text-xs text-center font-medium text-gray-700 leading-tight w-full truncate px-1">
                       {milk.name}
@@ -209,7 +209,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onC
 
           <button
             onClick={handleAddToCart}
-            className="flex-1 bg-blue-600 active:bg-blue-700 text-white rounded-2xl px-6 flex items-center justify-between font-bold shadow-lg shadow-blue-200 transition-all duration-200 active:scale-95"
+            className="flex-1 bg-[#5a1e28] active:bg-[#3a1420] text-white rounded-2xl px-6 flex items-center justify-between font-bold shadow-lg shadow-[#5a1e28]/30 transition-all duration-200 active:scale-95"
           >
             <span className="text-lg">{totalPrice} ₽</span>
             <Plus size={24} strokeWidth={3} />

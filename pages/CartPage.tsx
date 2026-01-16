@@ -158,12 +158,12 @@ export const CartPage: React.FC = () => {
           <div className="flex justify-between items-center mb-4">
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <Coins size={14} className="text-[#736153]" />
+                <Coins size={14} className="text-[#5a1e28]" />
                 <p className="font-bold text-slate-900 text-sm">Списать бонусы</p>
               </div>
               <p className="text-[10px] text-slate-400 font-medium mt-0.5">Доступно: {user.points} бонусов</p>
             </div>
-            <div className="bg-[#736153] px-3 py-1 rounded-full shadow-lg shadow-[#736153]/20">
+            <div className="bg-[#5a1e28] px-3 py-1 rounded-full shadow-lg shadow-[#5a1e28]/20">
               <span className="text-sm font-black text-white">{bonusesToUse} бонусов</span>
             </div>
           </div>
@@ -176,7 +176,7 @@ export const CartPage: React.FC = () => {
               step="1"
               value={bonusesToUse}
               onChange={(e) => setBonusesToUse(parseInt(e.target.value))}
-              className="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-[#736153] [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#736153] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:cursor-pointer"
+              className="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-[#5a1e28] [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#5a1e28] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:cursor-pointer"
             />
           </div>
         </div>
@@ -195,13 +195,13 @@ export const CartPage: React.FC = () => {
           />
           <button
             onClick={() => setIsAsap(true)}
-            className={`flex-1 py-3 text-xs font-bold rounded-xl relative z-10 transition-colors ${isAsap ? 'text-[#736153]' : 'text-slate-500'}`}
+            className={`flex-1 py-3 text-xs font-bold rounded-xl relative z-10 transition-colors ${isAsap ? 'text-[#5a1e28]' : 'text-slate-500'}`}
           >
             Как можно скорее
           </button>
           <button
             onClick={() => setIsAsap(false)}
-            className={`flex-1 py-3 text-xs font-bold rounded-xl relative z-10 transition-colors ${!isAsap ? 'text-[#736153]' : 'text-slate-500'}`}
+            className={`flex-1 py-3 text-xs font-bold rounded-xl relative z-10 transition-colors ${!isAsap ? 'text-[#5a1e28]' : 'text-slate-500'}`}
           >
             Ко времени
           </button>
@@ -238,7 +238,7 @@ export const CartPage: React.FC = () => {
 
         {/* Address Display (Static) */}
         <div className="w-full flex items-center gap-3 mt-6 p-3 bg-gray-50 rounded-xl border border-transparent">
-          <MapPin size={20} className="text-[#736153]" />
+          <MapPin size={20} className="text-[#5a1e28]" />
           <div className="text-left">
             <p className="text-xs text-slate-400 font-bold">Адрес выдачи</p>
             <p className="text-sm font-bold text-slate-900">{selectedAddress}</p>
@@ -271,7 +271,7 @@ export const CartPage: React.FC = () => {
           </div>
           <div className="flex justify-between text-sm animate-pop-in">
             <span className="text-slate-500 font-medium">Бонусы</span>
-            <span className={`font-bold ${bonusesToUse > 0 ? 'text-[#736153]' : 'text-green-500'}`}>
+            <span className={`font-bold ${bonusesToUse > 0 ? 'text-[#5a1e28]' : 'text-green-500'}`}>
               {bonusesToUse > 0 ? `-${bonusesToUse}` : `+${Math.floor(subtotal * 0.05)}`}
             </span>
           </div>
@@ -287,7 +287,7 @@ export const CartPage: React.FC = () => {
         <button
           ref={payButtonRef}
           onClick={handlePay}
-          className="w-full bg-[#736153] text-white py-5 rounded-[1.5rem] font-black uppercase text-xs tracking-[0.2em] shadow-lg shadow-[#736153]/40 active:scale-95 transition-all flex items-center justify-center gap-3 duration-200"
+          className="w-full bg-[#5a1e28] text-white py-5 rounded-[1.5rem] font-black uppercase text-xs tracking-[0.2em] shadow-lg shadow-[#5a1e28]/40 active:scale-95 transition-all flex items-center justify-center gap-3 duration-200"
         >
           <CreditCard size={18} />
           ЗАКАЗАТЬ {Math.round(total)} ₽
@@ -296,12 +296,12 @@ export const CartPage: React.FC = () => {
 
       {!isPayButtonVisible && (
         <div className="fixed bottom-24 right-6 z-50 animate-pop-in flex flex-col items-center">
-          <div className="bg-white border-[3px] border-[#736153] text-[#736153] text-xs font-black px-2.5 py-1 rounded-full shadow-lg z-10 mb-[-14px] relative whitespace-nowrap">
+          <div className="bg-white border-[3px] border-[#5a1e28] text-[#5a1e28] text-xs font-black px-2.5 py-1 rounded-full shadow-lg z-10 mb-[-14px] relative whitespace-nowrap">
             <span>{Math.round(total)} ₽</span>
           </div>
           <button
             onClick={scrollToCheckout}
-            className="w-12 h-12 bg-[#736153] text-white rounded-full shadow-[0_8px_30px_rgba(115,97,83,0.4)] flex items-center justify-center active:scale-90 transition-all group overflow-hidden"
+            className="w-12 h-12 bg-[#5a1e28] text-white rounded-full shadow-[0_8px_30px_rgba(115,97,83,0.4)] flex items-center justify-center active:scale-90 transition-all group overflow-hidden"
           >
             <div className="absolute inset-0 bg-white/20 animate-pulse-soft pointer-events-none" />
             <ChevronDown size={24} strokeWidth={3} className="text-white animate-bounce mt-1" style={{ animationDuration: '2s' }} />
