@@ -199,7 +199,7 @@ export const MenuPage: React.FC = () => {
       <h3 className="font-medium text-gray-900 text-sm mb-1 line-clamp-2 leading-tight">{product.name}</h3>
       <div className="mt-auto flex items-center justify-between">
         <span className="font-medium text-gray-900">{product.price}₽</span>
-        <div className="w-9 h-9 rounded-full bg-[#5a1e28]/10 text-[#5a1e28] flex items-center justify-center transition-transform active:scale-90">
+        <div className="w-9 h-9 rounded-full bg-gray-200 text-[#5a1e28] flex items-center justify-center transition-transform active:scale-90">
           <Plus size={18} strokeWidth={3} />
         </div>
       </div>
@@ -319,14 +319,14 @@ export const MenuPage: React.FC = () => {
           })
         )}
 
-        <div className="pt-8 pb-12 text-center animate-fade-in stagger-6 opacity-0 fill-mode-forwards">
-          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-4">Наш Instagram</p>
-          <div className="flex justify-center gap-4">
-            <a href="https://www.instagram.com/brunch_coffee__/" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
-              <Instagram size={24} />
+        <div className="pt-6 pb-12 text-center animate-fade-in stagger-6 opacity-0 fill-mode-forwards">
+          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-2">Наш Instagram</p>
+          <div className="flex justify-center gap-3">
+            <a href="https://www.instagram.com/brunch_coffee__/" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
+              <Instagram size={20} />
             </a>
           </div>
-          <p className="mt-8 text-[9px] text-slate-500 font-bold uppercase tracking-wider">Created by &lt;PowerApp&gt;</p>
+          <p className="mt-6 text-[9px] text-slate-500 font-bold uppercase tracking-wider">Created by &lt;PowerApp&gt;</p>
         </div>
       </div>
 

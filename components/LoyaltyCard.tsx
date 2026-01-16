@@ -49,7 +49,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
         {/* Center: Logo */}
         <div className="flex-1 flex justify-center items-center relative z-10 h-full">
           <img
-            src="https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+            src="https://i.postimg.cc/KcdgHBmK/image-1768584600692.png"
             alt="Brunch Coffee"
             className="h-12 object-contain opacity-90"
           />

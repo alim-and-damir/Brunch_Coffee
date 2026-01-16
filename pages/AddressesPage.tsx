@@ -73,25 +73,25 @@ export const AddressesPage: React.FC = () => {
             <div 
               key={loc.id} 
               onClick={() => handleSelectAddress(loc.address)}
-              className={`bg-white p-5 rounded-3xl shadow-sm border transition-all cursor-pointer active:scale-[0.98] animate-slide-up flex flex-col gap-4 ${
-                isSelected ? 'border-blue-500 ring-1 ring-blue-500' : 'border-gray-100'
+              className={`bg-white p-4 rounded-3xl shadow-sm border transition-all cursor-pointer active:scale-[0.98] animate-slide-up flex flex-col gap-3 ${
+                isSelected ? 'border-[#5a1e28] ring-1 ring-[#5a1e28]' : 'border-gray-100'
               }`}
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <div className="flex items-start gap-4">
                 <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 transition-colors ${
-                  isSelected ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-600'
+                  isSelected ? 'bg-[#5a1e28] text-white' : 'bg-gray-200 text-[#5a1e28]'
                 }`}>
                   <MapPin size={24} />
                 </div>
                 
                 <div className="flex-1">
                   <h3 className="font-bold text-slate-900 text-lg mb-1">{loc.name}</h3>
-                  <p className="text-sm text-slate-500 mb-3">{loc.address}</p>
+                  <p className="text-sm text-slate-500 mb-2">{loc.address}</p>
                 </div>
 
                 {isSelected && (
-                  <div className="bg-blue-600 text-white p-1 rounded-full animate-pop-in">
+                  <div className="bg-[#5a1e28] text-white p-1 rounded-full animate-pop-in">
                     <Check size={16} strokeWidth={3} />
                   </div>
                 )}
