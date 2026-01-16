@@ -28,11 +28,11 @@ export const SupportPage: React.FC = () => {
       </div>
 
       <div className="p-6">
-        <div className="bg-blue-600 rounded-3xl p-6 text-white mb-8 shadow-xl shadow-blue-200">
+        <div className="bg-[#5a1e28] rounded-3xl p-6 text-white mb-8 shadow-xl shadow-[#5a1e28]/30">
           <MessageCircle size={32} className="mb-4" />
           <h2 className="text-xl font-bold mb-2">Нужна помощь?</h2>
-          <p className="text-blue-100 text-sm leading-relaxed mb-6">Напишите нам в Telegram, и наш менеджер ответит вам в течение 5 минут.</p>
-          <button className="w-full bg-white text-blue-600 py-4 rounded-2xl font-black uppercase text-xs tracking-widest shadow-lg active:scale-[0.98] transition-transform">Написать менеджеру</button>
+          <p className="text-white/80 text-sm leading-relaxed mb-6">Напишите нам в Telegram, и наш менеджер ответит вам в течение 5 минут.</p>
+          <button className="w-full bg-white text-[#5a1e28] py-4 rounded-2xl font-black uppercase text-xs tracking-widest shadow-lg active:scale-[0.98] transition-transform">Написать менеджеру</button>
         </div>
 
         <h3 className="text-lg font-bold text-slate-900 mb-4 px-1">Часто задаваемые вопросы</h3>
