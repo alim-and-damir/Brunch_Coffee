@@ -30,14 +30,14 @@ const BottomNavigation = () => {
             >
               <div
                 className={`relative transition-all duration-300 ease-out transform ${isActive ? '-translate-y-2' : 'translate-y-0'
-                  } ${isActive ? 'text-[#8c7c6a]' : 'text-gray-400'}`}
+                  } ${isActive ? 'text-[#5a1e28]' : 'text-gray-400'}`}
               >
                 <Icon size={24} strokeWidth={isActive ? 2.5 : 2} />
               </div>
 
               <span
                 className={`text-[11px] font-bold transition-all duration-300 ease-out absolute bottom-4 ${isActive
-                  ? 'opacity-100 translate-y-0 text-[#8c7c6a] scale-100'
+                  ? 'opacity-100 translate-y-0 text-[#5a1e28] scale-100'
                   : 'opacity-0 translate-y-4 text-gray-400 scale-75 pointer-events-none'
                   }`}
               >

@@ -34,7 +34,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -45,7 +46,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -56,7 +58,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -67,7 +70,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -78,7 +82,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -89,7 +94,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
   {
@@ -100,7 +106,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "leaf_tea",
     imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
     modifiers: {
-      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }]
+      sizes: [{ id: 's', name: '200мл', price: 0 }, { id: 'l', name: '240мл', price: 40 }],
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
   },
 
@@ -293,7 +300,10 @@ export const PRODUCTS: Product[] = [
     description: "Кола с классическим вкусом",
     price: 250,
     categoryId: "cold_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 25,
@@ -301,7 +311,10 @@ export const PRODUCTS: Product[] = [
     description: "Кола с гранатом",
     price: 250,
     categoryId: "cold_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 26,
@@ -309,7 +322,10 @@ export const PRODUCTS: Product[] = [
     description: "Кола с вишней",
     price: 250,
     categoryId: "cold_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 27,
@@ -317,7 +333,10 @@ export const PRODUCTS: Product[] = [
     description: "Кола брио кола",
     price: 300,
     categoryId: "cold_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
 
   // --- ФРЕШИ ---
@@ -327,7 +346,10 @@ export const PRODUCTS: Product[] = [
     description: "Свежевыжатый апельсиновый сок",
     price: 300,
     categoryId: "fresh",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 29,
@@ -335,7 +357,10 @@ export const PRODUCTS: Product[] = [
     description: "Свежевыжатый грейпфрутовый сок",
     price: 300,
     categoryId: "fresh",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
 
   // --- МИЛКШЕЙКИ ---
@@ -413,7 +438,10 @@ export const PRODUCTS: Product[] = [
     description: "Лимонад мохито",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 37,
@@ -421,7 +449,10 @@ export const PRODUCTS: Product[] = [
     description: "Клубничный мохито",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 38,
@@ -429,7 +460,10 @@ export const PRODUCTS: Product[] = [
     description: "Лимонад с киви и яблоком",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 39,
@@ -437,7 +471,10 @@ export const PRODUCTS: Product[] = [
     description: "Лимонад с вишней и питахайей",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 40,
@@ -445,7 +482,10 @@ export const PRODUCTS: Product[] = [
     description: "Лимонад с манго и личи",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 41,
@@ -453,7 +493,10 @@ export const PRODUCTS: Product[] = [
     description: "Лимонад с грейпфрутом",
     price: 250,
     categoryId: "lemonades",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
 
   // --- СМУЗИ ---
@@ -509,7 +552,10 @@ export const PRODUCTS: Product[] = [
     description: "Классический эспрессо",
     price: 180,
     categoryId: "hot_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 47,
@@ -539,7 +585,10 @@ export const PRODUCTS: Product[] = [
     description: "Американо",
     price: 180,
     categoryId: "hot_coffee",
-    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png"
+    imageUrl: "https://i.postimg.cc/jqLBqZM1/Branc-Photoroom.png",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
   },
   {
     id: 50,

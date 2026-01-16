@@ -5,14 +5,44 @@ import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../store/useAppStore';
 
 const ADDRESSES = [
-  { 
-    id: 1, 
-    name: 'H🪶STORY', 
-    address: 'Нальчик, ул. Толстого, 43', 
-    phone: '+7 (960) 431-62-23',
+  {
+    id: 1,
+    name: 'Brunch Coffee',
+    address: 'Тарчокова 25 New',
+    phone: '+7(938) 078-20-50',
     workTime: [
-      'пн-пт: 8:00 - 23:00',
-      'сб-вс: 9:00 - 23:00'
+      'пн-сб 8:00−23:00',
+      'вс 8:00−21:00'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Brunch Coffee',
+    address: 'Тарчокова 25',
+    phone: '+7(928) 078-13-36',
+    workTime: [
+      'пн-сб 8:00−23:00',
+      'вс 8:00−21:00'
+    ]
+  },
+  {
+    id: 3,
+    name: 'Brunch Coffee',
+    address: 'Нахушева 10',
+    phone: '+7(928) 080-29-20',
+    workTime: [
+      'пн-сб 8:00−23:00',
+      'вс 8:00−21:00'
+    ]
+  },
+  {
+    id: 4,
+    name: 'Brunch Coffee',
+    address: 'Кенже, Каменская 21',
+    phone: '+7(918) 720-19-63',
+    workTime: [
+      'пн-сб 8:00−23:00',
+      'вс 8:00−21:00'
     ]
   },
 ];

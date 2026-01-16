@@ -23,8 +23,8 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onC
 
   useEffect(() => {
     if (product) {
-      setSelectedSize(product.modifiers?.sizes[0] || null);
-      setSelectedMilk(product.modifiers?.milks[0] || null);
+      setSelectedSize((product.modifiers?.sizes && product.modifiers.sizes[0]) || null);
+      setSelectedMilk((product.modifiers?.milks && product.modifiers.milks[0]) || null);
       setSelectedSyrup(null);
       setQuantity(1);
       setVideoError(false);

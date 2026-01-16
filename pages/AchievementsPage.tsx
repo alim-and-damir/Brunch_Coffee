@@ -32,7 +32,7 @@ export const AchievementsPage: React.FC = () => {
       </div>
 
       <div className="p-6">
-        <div className="bg-[#8c7c6a] rounded-[2.5rem] p-8 text-white mb-8 shadow-2xl relative overflow-hidden animate-slide-down">
+        <div className="bg-[#5a1e28] rounded-[2.5rem] p-8 text-white mb-8 shadow-2xl relative overflow-hidden animate-slide-down">
           <div className="absolute top-0 right-0 w-48 h-48 bg-white rounded-full blur-[80px] opacity-10" />
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-black rounded-full blur-[60px] opacity-10" />
 
@@ -45,7 +45,7 @@ export const AchievementsPage: React.FC = () => {
 
             <div className="w-full bg-black/20 h-3 rounded-full overflow-hidden mb-3 border border-white/5">
               <div
-                className="h-full bg-[#F5F2E8] rounded-full shadow-[0_0_10px_rgba(245,242,232,0.5)] transition-all duration-1000 ease-out"
+                className="h-full bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-1000 ease-out"
                 style={{ width: `${Math.min(100, (currentPoints / user.nextLevelPoints) * 100)}%` }}
               />
             </div>
@@ -57,31 +57,31 @@ export const AchievementsPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#F3F4F6] rounded-3xl p-6 text-gray-900 mb-10 shadow-xl border-2 border-black animate-slide-up stagger-1 opacity-0 fill-mode-forwards">
+        <div className="bg-[#F3F4F6] rounded-3xl p-6 text-gray-900 mb-10 shadow-xl border-2 border-[#5a1e28] animate-slide-up stagger-1 opacity-0 fill-mode-forwards">
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-[#8c7c6a]">
+            <span className="text-[#5a1e28]">
               <Info size={18} />
             </span>
             <h3 className="font-black uppercase text-xs tracking-wider">Как заработать бонусы?</h3>
           </div>
           <div className="space-y-4">
             <div className="flex items-start gap-4">
-              <div className="w-8 h-8 bg-[#8c7c6a]/20 rounded-xl flex items-center justify-center shrink-0">
-                <Coins size={16} className="text-[#8c7c6a]" />
+              <div className="w-8 h-8 bg-[#5a1e28]/20 rounded-xl flex items-center justify-center shrink-0">
+                <Coins size={16} className="text-[#5a1e28]" />
               </div>
-              <p className="text-sm font-medium leading-snug text-gray-700">Получайте <span className="font-bold text-[#8c7c6a]">5% кэшбэка</span> бонусами при полной оплате рублями.</p>
+              <p className="text-sm font-medium leading-snug text-gray-700">Получайте <span className="font-bold text-[#5a1e28]">5% кэшбэка</span> бонусами при полной оплате рублями.</p>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-8 h-8 bg-[#8c7c6a]/20 rounded-xl flex items-center justify-center shrink-0">
-                <Share2 size={16} className="text-[#8c7c6a]" />
+              <div className="w-8 h-8 bg-[#5a1e28]/20 rounded-xl flex items-center justify-center shrink-0">
+                <Share2 size={16} className="text-[#5a1e28]" />
               </div>
-              <p className="text-sm font-medium leading-snug text-gray-700">Подписывайтесь на наши соцсети и получайте <span className="font-bold text-[#8c7c6a]">50 бонусов</span> единоразово!</p>
+              <p className="text-sm font-medium leading-snug text-gray-700">Подписывайтесь на наши соцсети и получайте <span className="font-bold text-[#5a1e28]">50 бонусов</span> единоразово!</p>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-8 h-8 bg-[#8c7c6a]/20 rounded-xl flex items-center justify-center shrink-0">
-                <UserPlus size={16} className="text-[#8c7c6a]" />
+              <div className="w-8 h-8 bg-[#5a1e28]/20 rounded-xl flex items-center justify-center shrink-0">
+                <UserPlus size={16} className="text-[#5a1e28]" />
               </div>
-              <p className="text-sm font-medium leading-snug text-gray-700">Дарим <span className="font-bold text-[#8c7c6a]">100 бонусов</span> за каждого друга, который совершит первую покупку.</p>
+              <p className="text-sm font-medium leading-snug text-gray-700">Дарим <span className="font-bold text-[#5a1e28]">100 бонусов</span> за каждого друга, который совершит первую покупку.</p>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export const AchievementsPage: React.FC = () => {
               <div
                 key={level.id}
                 className={`bg-white rounded-3xl p-5 border transition-all duration-500 animate-slide-up ${staggerClass} opacity-0 fill-mode-forwards ${isCurrent
-                    ? 'ring-2 ring-[#8c7c6a] border-transparent shadow-xl scale-[1.03] z-10'
+                    ? 'ring-2 ring-[#5a1e28] border-transparent shadow-xl scale-[1.03] z-10'
                     : 'border-gray-100 shadow-sm hover:shadow-md'
                   } ${!isUnlocked ? 'grayscale opacity-60' : ''}`}
               >
@@ -127,7 +127,7 @@ export const AchievementsPage: React.FC = () => {
                 {isCurrent && (
                   <div className="mt-4 pt-4 border-t border-slate-50 flex items-center justify-center gap-2 animate-fade-in">
                     <Star size={12} className="text-yellow-500 fill-yellow-500 animate-pulse" />
-                    <span className="text-[9px] font-black uppercase text-[#8c7c6a] tracking-widest">Твой текущий ранг</span>
+                    <span className="text-[9px] font-black uppercase text-[#5a1e28] tracking-widest">Твой текущий ранг</span>
                     <Star size={12} className="text-yellow-500 fill-yellow-500 animate-pulse" />
                   </div>
                 )}

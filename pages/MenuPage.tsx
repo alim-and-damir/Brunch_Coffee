@@ -258,7 +258,7 @@ export const MenuPage: React.FC = () => {
                 key={cat.id}
                 id={`tab-${cat.id}`}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat.id ? 'bg-[#F3F4F6] text-gray-900 shadow-md border-2 border-black' : 'bg-white text-gray-600 border border-gray-100'
+                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat.id ? 'bg-[#F3F4F6] text-gray-900 shadow-md border-2 border-[#5a1e28]' : 'bg-white text-gray-600 border border-gray-100'
                   }`}
               >
                 {cat.name}
@@ -320,23 +320,14 @@ export const MenuPage: React.FC = () => {
         )}
 
         <div className="pt-8 pb-12 text-center animate-fade-in stagger-6 opacity-0 fill-mode-forwards">
-          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-4">Мы в соцсетях</p>
+          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-4">Наш Instagram</p>
           <div className="flex justify-center gap-4">
-            <a href="https://t.me/historycoffee" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-blue-500 transition-all active:scale-90 border border-gray-50 overflow-hidden">
-              <svg viewBox="0 0 100 100" className="w-9 h-9">
-                <path d="M72.5,28.5L25.5,46.5c-3.2,1.3-3.2,3.1-0.6,3.9l12,3.7l27.8-17.5c1.3-0.8,2.5-0.4,1.5,0.5L43.7,56.3l-0.8,12.5 c1.2,0,1.7-0.6,2.4-1.2l5.8-5.6l12,8.8c2.2,1.2,3.8,0.6,4.4-2.1l7.8-37.1C76.2,28.2,74.9,27.5,72.5,28.5z" fill="currentColor" />
-              </svg>
-            </a>
-            <a href="https://instagram.com/history.coffee.ru/" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
+            <a href="https://www.instagram.com/brunch_coffee__/" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-pink-500 transition-all active:scale-90 border border-gray-50">
               <Instagram size={24} />
             </a>
-            <a href="https://vk.com/historycoffee" target="_blank" rel="noreferrer" className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-500 hover:text-blue-600 transition-all active:scale-90 border border-gray-50 overflow-hidden">
-              <svg viewBox="0 0 100 100" className="w-10 h-10">
-                <path d="M54.5,70c-18.1,0-28.4-12.4-28.9-33h9.1c0.4,15.1,7,21.5,12.3,22.9v-22.9h8.6v13.1c5.3-0.5,10.7-6.5,12.5-13.1h8.6 c-1.5,8.1-7.5,14.1-11.8,16.6c4.3,2.1,11.2,7.3,13.8,16.4h-9.5c-2-6.3-7-11.2-13.6-11.8v11.8H54.5z" fill="currentColor" />
-              </svg>
-            </a>
           </div>
-          <p className="mt-8 text-[9px] text-slate-500 font-bold uppercase tracking-wider">Created by &lt;еще не придумали&gt;</p>
+          <p className="mt-6 text-[9px] text-slate-500 font-bold uppercase tracking-wider">пароль от WI-FI: 55555555</p>
+          <p className="mt-8 text-[9px] text-slate-500 font-bold uppercase tracking-wider">Created by &lt;PowerApp&gt;</p>
         </div>
       </div>
 
@@ -348,11 +339,11 @@ export const MenuPage: React.FC = () => {
           >
             <div className="flex flex-col items-start">
               <span className="text-lg font-black text-slate-900 leading-none mb-0.5">{cartTotal} ₽</span>
-              <span className={`text-[10px] font-bold text-slate-600 leading-none transition-colors ${isCartAnimating ? 'text-[#8c7c6a]' : ''}`}>
+              <span className={`text-[10px] font-bold text-slate-600 leading-none transition-colors ${isCartAnimating ? 'text-[#5a1e28]' : ''}`}>
                 {cartItemsCount} тов.
               </span>
             </div>
-            <div className={`w-12 h-12 bg-[#8c7c6a] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#8c7c6a]/30 transition-transform ${isCartAnimating ? 'scale-110 rotate-12' : ''}`}>
+            <div className={`w-12 h-12 bg-[#5a1e28] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#5a1e28]/30 transition-transform ${isCartAnimating ? 'scale-110 rotate-12' : ''}`}>
               <ShoppingBag size={20} strokeWidth={2.5} className="animate-bounce-subtle" />
             </div>
           </div>
@@ -362,7 +353,7 @@ export const MenuPage: React.FC = () => {
       {!isKeyboardOpen && showScrollTop && (
         <button
           onClick={scrollToTop}
-          className={`fixed bottom-[103px] right-6 z-50 p-3 bg-white text-[#8c7c6a] rounded-full shadow-[0_4px_20px_rgba(140,124,106,0.2)] transition-all active:scale-90 opacity-90 hover:opacity-100 flex items-center justify-center`}
+          className={`fixed bottom-[103px] right-6 z-50 p-3 bg-white text-[#5a1e28] rounded-full shadow-[0_4px_20px_rgba(140,124,106,0.2)] transition-all active:scale-90 opacity-90 hover:opacity-100 flex items-center justify-center`}
         >
           <ArrowUp size={24} strokeWidth={2.5} className="animate-bounce" style={{ animationDuration: '2s' }} />
         </button>

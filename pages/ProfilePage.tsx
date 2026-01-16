@@ -113,7 +113,7 @@ export const ProfilePage: React.FC = () => {
         {isAdmin && (
           <div
             onClick={() => navigate('/admin')}
-            className="mt-4 flex items-center gap-2 px-4 py-2 bg-[#8c7c6a] rounded-xl cursor-pointer active:scale-95 transition-all shadow-md shadow-[#8c7c6a]/30"
+            className="mt-4 flex items-center gap-2 px-4 py-2 bg-[#5a1e28] rounded-xl cursor-pointer active:scale-95 transition-all shadow-md shadow-[#5a1e28]/30"
           >
             <ShieldAlert size={14} className="text-white" />
             <span className="text-xs font-bold text-white uppercase tracking-wider">Админ. панель</span>
