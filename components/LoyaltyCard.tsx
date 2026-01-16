@@ -56,7 +56,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
             <img
               src="https://i.postimg.cc/KcdgHBmK/image-1768584600692.png"
               alt="Brunch Coffee"
-              className="h-9 w-auto object-contain opacity-90"
+              className="h-11 w-auto object-contain opacity-90"
             />
           </div>
 
