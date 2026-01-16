@@ -199,7 +199,7 @@ export const MenuPage: React.FC = () => {
       <h3 className="font-medium text-gray-900 text-sm mb-1 line-clamp-2 leading-tight">{product.name}</h3>
       <div className="mt-auto flex items-center justify-between">
         <span className="font-medium text-gray-900">{product.price}₽</span>
-        <div className="w-9 h-9 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center transition-transform active:scale-90">
+        <div className="w-9 h-9 rounded-full bg-[#5a1e28]/10 text-[#5a1e28] flex items-center justify-center transition-transform active:scale-90">
           <Plus size={18} strokeWidth={3} />
         </div>
       </div>
@@ -326,7 +326,6 @@ export const MenuPage: React.FC = () => {
               <Instagram size={24} />
             </a>
           </div>
-          <p className="mt-6 text-[9px] text-slate-500 font-bold uppercase tracking-wider">пароль от WI-FI: 55555555</p>
           <p className="mt-8 text-[9px] text-slate-500 font-bold uppercase tracking-wider">Created by &lt;PowerApp&gt;</p>
         </div>
       </div>

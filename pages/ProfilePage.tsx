@@ -104,10 +104,10 @@ export const ProfilePage: React.FC = () => {
         <h1 className="text-2xl font-bold text-gray-900">{user.name}</h1>
         <div
           onClick={() => navigate('/achievements')}
-          className="flex items-center gap-1.5 bg-blue-50 px-3 py-1 rounded-full mt-2 cursor-pointer active:scale-95 transition-transform"
+          className="flex items-center gap-1.5 bg-[#5a1e28]/10 px-3 py-1 rounded-full mt-2 cursor-pointer active:scale-95 transition-transform"
         >
-          <Gift size={12} className="text-blue-600" />
-          <p className="text-blue-600 text-xs font-bold uppercase tracking-wider">{user.level}</p>
+          <Gift size={12} className="text-[#5a1e28]" />
+          <p className="text-[#5a1e28] text-xs font-bold uppercase tracking-wider">{user.level}</p>
         </div>
 
         {isAdmin && (
@@ -141,17 +141,17 @@ export const ProfilePage: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-blue-600 to-stone-800 rounded-3xl p-6 text-white shadow-lg mb-8 relative overflow-hidden animate-slide-up stagger-3 opacity-0 fill-mode-forwards">
+      <div className="bg-gradient-to-br from-[#5a1e28] to-[#3a1420] rounded-3xl p-6 text-white shadow-lg mb-8 relative overflow-hidden animate-slide-up stagger-3 opacity-0 fill-mode-forwards">
         <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-10 -mt-10 blur-2xl"></div>
 
         <h2 className="text-xl font-bold mb-2">Приглашайте друзей</h2>
-        <p className="text-blue-100 text-sm mb-6">Получайте 100 бонусов за каждый первый заказ вашего друга.</p>
+        <p className="text-white/80 text-sm mb-6">Получайте 100 бонусов за каждый первый заказ вашего друга.</p>
 
         <div className="bg-white/10 backdrop-blur-md rounded-xl p-1 pl-4 flex items-center justify-between border border-white/20">
           <span className="text-xs font-mono truncate mr-2 opacity-90">{referralLink}</span>
           <button
             onClick={copyToClipboard}
-            className="bg-white text-blue-600 p-2 rounded-lg hover:bg-blue-50 transition-colors active:scale-90"
+            className="bg-white text-[#5a1e28] p-2 rounded-lg hover:bg-white/90 transition-colors active:scale-90"
           >
             <Copy size={16} />
           </button>
@@ -161,7 +161,7 @@ export const ProfilePage: React.FC = () => {
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm animate-slide-up stagger-4 opacity-0 fill-mode-forwards mb-6">
         <div className="p-4 border-b border-gray-100 flex items-center justify-between">
           <div className="flex items-center gap-3 text-gray-700">
-            <Fingerprint size={18} className="text-blue-500" />
+            <Fingerprint size={18} className="text-[#5a1e28]" />
             <span className="font-medium">ID аккаунта</span>
           </div>
           <span className="text-xs font-mono text-slate-600 bg-gray-50 px-2 py-1 rounded font-bold">{user.id}</span>
@@ -190,6 +190,11 @@ export const ProfilePage: React.FC = () => {
           <span className="font-medium text-gray-700">Служба поддержки</span>
           <ChevronRight size={18} className="text-slate-400" />
         </button>
+      </div>
+
+      <div className="px-4 pb-8 text-center">
+        <p className="text-[10px] font-black text-[#5a1e28] uppercase tracking-[0.2em] mb-2">Wi-Fi пароль</p>
+        <p className="text-sm font-bold text-gray-900 tracking-wider">55555555</p>
       </div>
 
       {/* Edit Profile Modal (Bottom Sheet) */}
@@ -240,7 +245,7 @@ export const ProfilePage: React.FC = () => {
               <button
                 onClick={handleSaveProfile}
                 disabled={!editName.trim()}
-                className="w-full bg-blue-600 disabled:bg-slate-300 text-white py-4 rounded-2xl font-bold shadow-lg shadow-blue-200 flex items-center justify-center gap-2 active:scale-95 transition-all"
+                className="w-full bg-[#5a1e28] disabled:bg-slate-300 text-white py-4 rounded-2xl font-bold shadow-lg shadow-[#5a1e28]/30 flex items-center justify-center gap-2 active:scale-95 transition-all"
               >
                 <Save size={20} />
                 Сохранить изменения
