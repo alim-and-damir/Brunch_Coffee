@@ -224,7 +224,7 @@ export const CartPage: React.FC = () => {
                 onChange={(e) => setScheduledTime(e.target.value)}
                 className="absolute inset-0 w-full h-full opacity-0 z-20 cursor-pointer"
               />
-              <div className="flex items-center justify-center gap-1 bg-[#f5f3f0] rounded-3xl px-8 py-2 border-2 border-transparent hover:border-[#dbcbbd] transition-colors">
+              <div className="flex items-center justify-center gap-1 bg-gray-200 rounded-3xl px-8 py-2 border-2 border-transparent hover:border-[#5a1e28] transition-colors">
                 <span className="text-6xl font-black text-slate-900 tracking-tight leading-none">{scheduledTime.split(':')[0] || '--'}</span>
                 <span className="text-4xl font-bold text-[#b5a698] mb-2 animate-pulse">:</span>
                 <span className="text-6xl font-black text-slate-900 tracking-tight leading-none">{scheduledTime.split(':')[1] || '--'}</span>
