@@ -35,28 +35,32 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
           e.stopPropagation();
           setShowQr(true);
         }}
-        className="w-full bg-[#5a1e28] text-white rounded-[2.5rem] p-4 h-16 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
+        className="w-full bg-[#5a1e28] text-white rounded-[2.5rem] p-4 shadow-xl relative overflow-hidden mb-6 transition-transform transform active:scale-[0.98] duration-200 cursor-pointer group"
       >
-        {/* Left: Avatar */}
-        <div className="relative z-10 flex-shrink-0 ml-1">
-          <img
-            src={user.avatarUrl}
-            alt={user.name}
-            className="w-11 h-11 rounded-full border-2 border-white object-cover bg-gray-200"
-          />
-        </div>
+        {/* Background glow effect */}
+        <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white rounded-full blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity"></div>
 
-        {/* Center: Logo */}
-        <div className="flex-1 flex justify-center items-center relative z-10 h-full">
-          <img
-            src="https://i.postimg.cc/KcdgHBmK/image-1768584600692.png"
-            alt="Brunch Coffee"
-            className="h-7 w-auto object-contain opacity-90"
-          />
-        </div>
+        {/* Content */}
+        <div className="flex items-center justify-between relative z-10">
+          {/* Avatar */}
+          <div className="flex items-center">
+            <img
+              src={user.avatarUrl}
+              alt={user.name}
+              className="w-11 h-11 rounded-full border-2 border-white object-cover bg-gray-200"
+            />
+          </div>
 
-        {/* Right: QR Icon */}
-        <div className="relative z-10 flex-shrink-0 mr-1">
+          {/* Logo */}
+          <div className="flex-1 flex justify-center px-4">
+            <img
+              src="https://i.postimg.cc/KcdgHBmK/image-1768584600692.png"
+              alt="Brunch Coffee"
+              className="h-7 w-auto object-contain opacity-90"
+            />
+          </div>
+
+          {/* QR Button */}
           <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm relative">
             <QrCode className="w-6 h-6" />
             <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-white rounded-full animate-pulse shadow-[0_0_5px_rgba(255,255,255,0.8)]"></div>
