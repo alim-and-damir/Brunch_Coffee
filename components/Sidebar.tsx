@@ -39,7 +39,7 @@ export const Sidebar: React.FC = () => {
                         className={({ isActive }) => `
               flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group
               ${isActive
-                                ? 'bg-[#2B211C]/10 text-[#2B211C] font-bold'
+                                ? 'bg-[#8c7c6a]/10 text-[#8c7c6a] font-bold'
                                 : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900 font-medium'}
             `}
                     >
@@ -48,7 +48,7 @@ export const Sidebar: React.FC = () => {
                                 <item.icon
                                     size={20}
                                     strokeWidth={isActive ? 2.5 : 2}
-                                    className={isActive ? 'text-[#2B211C]' : 'text-gray-400 group-hover:text-gray-600'}
+                                    className={isActive ? 'text-[#8c7c6a]' : 'text-gray-400 group-hover:text-gray-600'}
                                 />
                                 <span className="flex-1">{item.label}</span>
                                 {item.badge && (

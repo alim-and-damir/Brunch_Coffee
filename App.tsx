@@ -101,7 +101,7 @@ const AppContent: React.FC = () => {
 
   if (!isAuth) {
     return (
-      <div className="h-screen w-full flex items-center justify-center bg-[#F5F2E8]">
+      <div className="h-screen w-full flex items-center justify-center bg-[#F3F4F6]">
         <div className="w-10 h-10 border-4 border-blue-100 border-t-blue-600 rounded-full animate-spin"></div>
       </div>
     );

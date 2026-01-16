@@ -258,7 +258,7 @@ export const MenuPage: React.FC = () => {
                 key={cat.id}
                 id={`tab-${cat.id}`}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat.id ? 'bg-[#b7ad98] text-white shadow-md' : 'bg-white text-gray-600 border border-gray-100'
+                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat.id ? 'bg-[#F3F4F6] text-gray-900 shadow-md border-2 border-black' : 'bg-white text-gray-600 border border-gray-100'
                   }`}
               >
                 {cat.name}
@@ -348,11 +348,11 @@ export const MenuPage: React.FC = () => {
           >
             <div className="flex flex-col items-start">
               <span className="text-lg font-black text-slate-900 leading-none mb-0.5">{cartTotal} ₽</span>
-              <span className={`text-[10px] font-bold text-slate-600 leading-none transition-colors ${isCartAnimating ? 'text-[#736153]' : ''}`}>
+              <span className={`text-[10px] font-bold text-slate-600 leading-none transition-colors ${isCartAnimating ? 'text-[#8c7c6a]' : ''}`}>
                 {cartItemsCount} тов.
               </span>
             </div>
-            <div className={`w-12 h-12 bg-[#736153] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#736153]/30 transition-transform ${isCartAnimating ? 'scale-110 rotate-12' : ''}`}>
+            <div className={`w-12 h-12 bg-[#8c7c6a] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#8c7c6a]/30 transition-transform ${isCartAnimating ? 'scale-110 rotate-12' : ''}`}>
               <ShoppingBag size={20} strokeWidth={2.5} className="animate-bounce-subtle" />
             </div>
           </div>
@@ -362,7 +362,7 @@ export const MenuPage: React.FC = () => {
       {!isKeyboardOpen && showScrollTop && (
         <button
           onClick={scrollToTop}
-          className={`fixed bottom-[103px] right-6 z-50 p-3 bg-white text-[#736153] rounded-full shadow-[0_4px_20px_rgba(115,97,83,0.2)] transition-all active:scale-90 opacity-90 hover:opacity-100 flex items-center justify-center`}
+          className={`fixed bottom-[103px] right-6 z-50 p-3 bg-white text-[#8c7c6a] rounded-full shadow-[0_4px_20px_rgba(140,124,106,0.2)] transition-all active:scale-90 opacity-90 hover:opacity-100 flex items-center justify-center`}
         >
           <ArrowUp size={24} strokeWidth={2.5} className="animate-bounce" style={{ animationDuration: '2s' }} />
         </button>

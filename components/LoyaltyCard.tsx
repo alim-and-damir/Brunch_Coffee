@@ -35,14 +35,14 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
           e.stopPropagation();
           setShowQr(true);
         }}
-        className="w-full bg-[#2B211C] text-white rounded-[30px] p-2 h-16 shadow-lg flex items-center justify-between mb-4 cursor-pointer active:scale-[0.98] transition-all group relative overflow-hidden z-50 pointer-events-auto"
+        className="w-full bg-[#8c7c6a] text-white rounded-[30px] p-2 h-16 shadow-lg flex items-center justify-between mb-4 cursor-pointer active:scale-[0.98] transition-all group relative overflow-hidden z-50 pointer-events-auto"
       >
         {/* Left: Avatar */}
         <div className="relative z-10 flex-shrink-0 ml-1">
           <img
             src={user.avatarUrl}
             alt={user.name}
-            className="w-12 h-12 rounded-full border-2 border-[#2B211C] object-cover bg-gray-200"
+            className="w-12 h-12 rounded-full border-2 border-white object-cover bg-gray-200"
           />
         </div>
 
@@ -87,7 +87,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
                 />
               </div>
               <h2 className="text-lg font-black text-slate-900 text-center">{user.name}</h2>
-              <div className="text-[9px] font-black text-[#2B211C] bg-[#F5F2E8] px-2 py-0.5 rounded-full mt-1 border border-[#EBE7E4] tracking-wider">
+              <div className="text-[9px] font-black text-[#8c7c6a] bg-[#F5F2E8] px-2 py-0.5 rounded-full mt-1 border border-[#EBE7E4] tracking-wider">
                 ID: {user.id}
               </div>
             </div>
@@ -116,7 +116,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
 
             <div className="w-full space-y-3">
               <div className="w-full bg-[#F5F2E8] rounded-2xl p-4 text-center border border-[#EBE7E4]">
-                <p className="text-[9px] text-[#2B211C] uppercase tracking-[0.2em] font-black mb-1">Ваш баланс</p>
+                <p className="text-[9px] text-[#8c7c6a] uppercase tracking-[0.2em] font-black mb-1">Ваш баланс</p>
                 <div className="flex items-center justify-center text-slate-900 leading-none">
                   <span className="text-3xl font-black tracking-tight">{user.points}</span>
                   <span className="text-xs font-bold text-slate-500 ml-1.5 self-end mb-0.5">бонусов</span>
