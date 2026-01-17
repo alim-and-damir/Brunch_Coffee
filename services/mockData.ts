@@ -306,7 +306,7 @@ export const PRODUCTS: Product[] = [
     description: "Нежный шоколадный чизкейк",
     price: 350,
     categoryId: "desserts",
-    imageUrl: "/images/chocolate-cheesecake.jpg",
+    imageUrl: "/images/chocolate-cheesecake.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
@@ -317,7 +317,7 @@ export const PRODUCTS: Product[] = [
     description: "Классический медовый торт",
     price: 350,
     categoryId: "desserts",
-    imageUrl: "/images/honey-cake.jpg",
+    imageUrl: "/images/honey-cake.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
     description: "Сладкий банановый кекс",
     price: 350,
     categoryId: "desserts",
-    imageUrl: "/images/banana-cake.jpg",
+    imageUrl: "/images/banana-cake.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
@@ -339,7 +339,7 @@ export const PRODUCTS: Product[] = [
     description: "Эклер с карамельной начинкой",
     price: 250,
     categoryId: "desserts",
-    imageUrl: "/images/caramel-eclair.jpg",
+    imageUrl: "/images/caramel-eclair.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
@@ -350,7 +350,7 @@ export const PRODUCTS: Product[] = [
     description: "Освежающий лимонный чизкейк",
     price: 300,
     categoryId: "desserts",
-    imageUrl: "/images/lemon-cheesecake.jpg",
+    imageUrl: "/images/lemon-cheesecake.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
@@ -361,7 +361,7 @@ export const PRODUCTS: Product[] = [
     description: "Печенье с шоколадом и арахисом",
     price: 200,
     categoryId: "desserts",
-    imageUrl: "/images/chocolate-peanut-cookie.jpg",
+    imageUrl: "/images/chocolate-peanut-cookie.png",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
