@@ -131,9 +131,9 @@ export const AdminPage: React.FC = () => {
   const tabIndex = activeTab === 'menu' ? 0 : 1;
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans pb-24 pt-6 relative overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 font-sans pb-24 relative overflow-x-hidden">
       {/* Header */}
-      <div className="bg-[#736153] text-white p-6 rounded-b-[2.5rem] shadow-lg mb-6 animate-fade-in">
+      <div className="bg-[#5a1e28] text-white p-6 rounded-b-[2.5rem] shadow-lg mb-6 animate-fade-in">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
@@ -161,7 +161,7 @@ export const AdminPage: React.FC = () => {
           className="w-full mb-6 bg-white border border-slate-200 p-4 rounded-2xl flex items-center justify-between shadow-sm active:scale-[0.98] transition-all"
         >
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#736153]/10 text-[#736153] rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#5a1e28]/10 text-[#5a1e28] rounded-full flex items-center justify-center">
               <ExternalLink size={20} />
             </div>
             <div className="text-left">
@@ -175,7 +175,7 @@ export const AdminPage: React.FC = () => {
         {/* Tabs with Slider */}
         <div className="relative flex gap-1 bg-white p-1 rounded-2xl border border-slate-200 mb-6">
           <div
-            className="absolute top-1 bottom-1 bg-[#736153] rounded-xl transition-all duration-300 ease-out shadow-lg"
+            className="absolute top-1 bottom-1 bg-[#5a1e28] rounded-xl transition-all duration-300 ease-out shadow-lg"
             style={{
               width: 'calc(50% - 2px)',
               left: `calc(${tabIndex * 50}% + ${tabIndex === 0 ? '2px' : '0px'})`
@@ -197,11 +197,11 @@ export const AdminPage: React.FC = () => {
           <div className="space-y-4 animate-slide-up">
             {/* Last Operation Section */}
             {lastOperation && (
-              <div className="bg-white border border-[#736153]/20 p-5 rounded-[2rem] shadow-sm mb-6 animate-pop-in overflow-hidden relative group">
+              <div className="bg-white border border-[#5a1e28]/20 p-5 rounded-[2rem] shadow-sm mb-6 animate-pop-in overflow-hidden relative group">
                 {/* Decorative background accent */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#736153]/10 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-110 duration-500" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-[#5a1e28]/10 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-110 duration-500" />
 
-                <div className="flex items-center gap-2 text-[#736153] mb-4 relative z-10">
+                <div className="flex items-center gap-2 text-[#5a1e28] mb-4 relative z-10">
                   <History size={16} />
                   <span className="text-[10px] font-black uppercase tracking-[0.2em]">Последняя операция</span>
                 </div>
@@ -225,7 +225,7 @@ export const AdminPage: React.FC = () => {
                             <span className="text-slate-400">{ch.field}:</span>
                             <span className="text-slate-600">{ch.from}</span>
                             <ArrowRight size={10} className="text-slate-300" />
-                            <span className="text-[#736153]">{ch.to}</span>
+                            <span className="text-[#5a1e28]">{ch.to}</span>
                           </div>
                         ))}
                       </div>
@@ -236,7 +236,7 @@ export const AdminPage: React.FC = () => {
                 <div className="pt-4 border-t border-slate-50 relative z-10">
                   <button
                     onClick={undoLastOperation}
-                    className="w-full flex items-center justify-center gap-2 bg-[#736153] text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest active:scale-[0.98] transition-all shadow-lg shadow-[#736153]/30"
+                    className="w-full flex items-center justify-center gap-2 bg-[#5a1e28] text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest active:scale-[0.98] transition-all shadow-lg shadow-[#5a1e28]/30"
                   >
                     <Undo2 size={14} />
                     Отменить последнее действие
@@ -249,7 +249,7 @@ export const AdminPage: React.FC = () => {
               <h2 className="text-lg font-bold text-slate-900">Каталог товаров</h2>
               <button
                 onClick={handleAddNewProduct}
-                className="bg-[#736153] text-white p-2 rounded-xl shadow-lg active:scale-90 transition-all"
+                className="bg-[#5a1e28] text-white p-2 rounded-xl shadow-lg active:scale-90 transition-all"
               >
                 <Plus size={20} />
               </button>
@@ -264,7 +264,7 @@ export const AdminPage: React.FC = () => {
                   <p className="text-xs text-slate-400">{p.price} ₽</p>
                 </div>
                 <div className="flex gap-2">
-                  <button onClick={() => handleEditProduct(p)} className="p-2 bg-slate-50 text-slate-500 rounded-lg hover:bg-[#736153]/10 hover:text-[#736153] transition-colors">
+                  <button onClick={() => handleEditProduct(p)} className="p-2 bg-slate-50 text-slate-500 rounded-lg hover:bg-[#5a1e28]/10 hover:text-[#5a1e28] transition-colors">
                     <Edit3 size={18} />
                   </button>
                   <button onClick={() => setProductToDelete(p)} className="p-2 bg-slate-50 text-slate-500 rounded-lg hover:bg-red-50 hover:text-red-600 transition-colors">
@@ -281,7 +281,7 @@ export const AdminPage: React.FC = () => {
           <div className="space-y-6 animate-slide-up">
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100">
-                <div className="w-10 h-10 bg-[#736153]/10 text-[#736153] rounded-xl flex items-center justify-center mb-3">
+                <div className="w-10 h-10 bg-[#5a1e28]/10 text-[#5a1e28] rounded-xl flex items-center justify-center mb-3">
                   <ShoppingBag size={20} />
                 </div>
                 <p className="text-2xl font-black text-slate-900">128</p>
@@ -305,7 +305,7 @@ export const AdminPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-[#736153] text-white p-6 rounded-3xl shadow-lg">
+            <div className="bg-[#5a1e28] text-white p-6 rounded-3xl shadow-lg">
               <h3 className="font-bold mb-2">Аналитика недели</h3>
               <p className="text-[#ece9e2]/70 text-xs mb-4">Статистика продаж по категориям</p>
               <div className="space-y-3">
@@ -391,14 +391,14 @@ export const AdminPage: React.FC = () => {
                     <input
                       type="text"
                       placeholder="Название товара"
-                      className="w-full bg-slate-50 border-none rounded-xl p-3 text-sm focus:ring-2 focus:ring-[#736153]"
+                      className="w-full bg-slate-50 border-none rounded-xl p-3 text-sm focus:ring-2 focus:ring-[#5a1e28]"
                       value={editingProduct.name}
                       onChange={e => setEditingProduct({ ...editingProduct, name: e.target.value })}
                     />
                     <input
                       type="number"
                       placeholder="Цена (₽)"
-                      className="w-full bg-slate-50 border-none rounded-xl p-3 text-sm focus:ring-2 focus:ring-[#736153]"
+                      className="w-full bg-slate-50 border-none rounded-xl p-3 text-sm focus:ring-2 focus:ring-[#5a1e28]"
                       value={editingProduct.price || ''}
                       onChange={e => setEditingProduct({ ...editingProduct, price: Number(e.target.value) })}
                     />
@@ -435,7 +435,7 @@ export const AdminPage: React.FC = () => {
                 <button
                   onClick={saveProduct}
                   disabled={isSaving}
-                  className="w-full bg-[#736153] text-white py-4 rounded-2xl font-bold shadow-lg shadow-[#736153]/30 flex items-center justify-center gap-2 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#5a1e28] text-white py-4 rounded-2xl font-bold shadow-lg shadow-[#5a1e28]/30 flex items-center justify-center gap-2 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSaving ? (
                     <>

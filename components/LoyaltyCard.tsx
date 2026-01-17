@@ -92,7 +92,7 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
                 />
               </div>
               <h2 className="text-lg font-black text-slate-900 text-center">{user.name}</h2>
-              <div className="text-[9px] font-black text-[#5a1e28] bg-[#F5F2E8] px-2 py-0.5 rounded-full mt-1 border border-[#EBE7E4] tracking-wider">
+              <div className="text-[9px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full mt-1 border border-slate-200 tracking-wider">
                 ID: {user.id}
               </div>
             </div>
@@ -120,8 +120,8 @@ export const LoyaltyCard: React.FC<LoyaltyCardProps> = ({ user }) => {
             </div>
 
             <div className="w-full space-y-3">
-              <div className="w-full bg-[#F5F2E8] rounded-2xl p-4 text-center border border-[#EBE7E4]">
-                <p className="text-[9px] text-[#5a1e28] uppercase tracking-[0.2em] font-black mb-1">Ваш баланс</p>
+              <div className="w-full bg-slate-50 rounded-2xl p-4 text-center border border-slate-200">
+                <p className="text-[9px] text-slate-600 uppercase tracking-[0.2em] font-black mb-1">Ваш баланс</p>
                 <div className="flex items-center justify-center text-slate-900 leading-none">
                   <span className="text-3xl font-black tracking-tight">{user.points}</span>
                   <span className="text-xs font-bold text-slate-500 ml-1.5 self-end mb-0.5">бонусов</span>
