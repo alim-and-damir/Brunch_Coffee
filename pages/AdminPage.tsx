@@ -141,7 +141,7 @@ export const AdminPage: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold">Панель Управления</h1>
-              <p className="text-[#ece9e2]/80 text-xs">Администрирование H🪶STORY</p>
+              <p className="text-[#ece9e2]/80 text-xs">Администрирование Brunch</p>
             </div>
           </div>
           <button
