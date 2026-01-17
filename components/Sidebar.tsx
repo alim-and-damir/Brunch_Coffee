@@ -25,7 +25,7 @@ export const Sidebar: React.FC = () => {
         <aside className="fixed left-0 top-0 bottom-0 w-64 bg-white border-r border-gray-200 z-50 hidden md:flex flex-col">
             <div className="h-20 flex items-center px-8 border-b border-gray-100">
                 <img
-                    src="/logo.png"
+                    src="/images/logo.png"
                     alt="Brunch Coffee Logo"
                     className="h-8 object-contain"
                 />

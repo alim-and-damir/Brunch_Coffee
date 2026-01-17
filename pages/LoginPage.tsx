@@ -42,7 +42,7 @@ export const LoginPage: React.FC = () => {
         <div className="flex flex-col items-center mb-6">
           <div className="w-48 h-48 mb-2 animate-pop-in drop-shadow-2xl">
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Brunch Coffee Logo"
               className="w-full h-full object-contain"
             />
