@@ -19,6 +19,7 @@ export const CATEGORIES: Category[] = [
   { id: 'milkshakes', name: 'Милкшейки' },
   { id: 'smoothies', name: 'Смузи' },
   { id: 'fresh_juices', name: 'Свежевыжатые соки' },
+  { id: 'desserts', name: 'Десерты' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -293,6 +294,74 @@ export const PRODUCTS: Product[] = [
     price: 300,
     categoryId: "fresh_juices",
     imageUrl: "/images/grapefruit-fresh.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+
+  // --- ДЕСЕРТЫ ---
+  {
+    id: 25,
+    name: "Шоколадный чизкейк",
+    description: "Нежный шоколадный чизкейк",
+    price: 350,
+    categoryId: "desserts",
+    imageUrl: "/images/chocolate-cheesecake.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 26,
+    name: "Медовик",
+    description: "Классический медовый торт",
+    price: 350,
+    categoryId: "desserts",
+    imageUrl: "/images/honey-cake.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 27,
+    name: "Банановый кекс",
+    description: "Сладкий банановый кекс",
+    price: 350,
+    categoryId: "desserts",
+    imageUrl: "/images/banana-cake.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 28,
+    name: "Карамельный эклер",
+    description: "Эклер с карамельной начинкой",
+    price: 250,
+    categoryId: "desserts",
+    imageUrl: "/images/caramel-eclair.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 29,
+    name: "Лимонный чизкейк",
+    description: "Освежающий лимонный чизкейк",
+    price: 300,
+    categoryId: "desserts",
+    imageUrl: "/images/lemon-cheesecake.jpg",
+    modifiers: {
+      milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
+    }
+  },
+  {
+    id: 30,
+    name: "Шоколадно-арахисовое печенье",
+    description: "Печенье с шоколадом и арахисом",
+    price: 200,
+    categoryId: "desserts",
+    imageUrl: "/images/chocolate-peanut-cookie.jpg",
     modifiers: {
       milks: [{ id: 'reg', name: 'Обычное', price: 0 }, { id: 'alt', name: 'Альтернативное молоко', price: 60 }]
     }
